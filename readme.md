@@ -1,11 +1,8 @@
 Story: Board Game Directory
 =====
 
-A few months ago, your best friend organized a weekly board game night. As the number of participants
-has grown, so has the library of available games. Your friend has asked you to create a website to
-track which games are available, as well as all the times they have been played. Your goal is to
-create a good-looking prototype that you won't be embarrassed to show your friend, not a fully-finished
-product.
+This repository contains the code for the MIE Dev Challenge. Below are the instructions to set up and test the application.
+
 
 Requirements
 =====
