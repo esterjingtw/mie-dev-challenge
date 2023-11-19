@@ -1,9 +1,26 @@
 <%- include('partials/header.ejs') %>
 
-<div>
-	TODO: Display list of board games
+<div class="container">
+    <h1 class="title">Board Games</h1>
+    <div class="game-list">
+        <% games.forEach(function(game) { %>
+            <div class="game-entry">
+                <h2><%= game.name %></h2>
+                <p><%= game.description %></p>
+                <% if (game.last_play_date) { %>
+                    <p>Last Played: <%= new Date(game.last_play_date).toLocaleDateString() %></p>
+                <% } else { %>
+                    <p>This game has not been played yet.</p>
+                <% } %>
+                <a href="/edit-game/<%= game.id %>" class="btn">Edit</a>
+                <a href="/add-game-session" class="btn">Add Session</a>
+            </div>
+        <% }); %>
+    </div>
+    <div class="actions">
+        <a href="/add-game" class="btn">Add Game</a>
+        <a href="/add-game-session" class="btn">Add Game Session</a>
+    </div>
 </div>
-
-<a href="/add-game">Add Game</a>
 
 <%- include ('partials/footer.ejs') %>
