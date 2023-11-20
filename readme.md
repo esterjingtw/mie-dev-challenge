@@ -3,6 +3,18 @@ Story: Board Game Directory
 
 This repository contains the code for the MIE Dev Challenge. Below are the instructions to set up and test the application.
 
+## Application Description
+
+The MIE Dev Challenge application consists of the following components:
+
+- **Node.js Backend**: The backend of the application is built using Node.js. It handles requests from the frontend, interacts with the database, and performs various tasks based on user interactions.
+
+- **Frontend UI**: The frontend of the application provides a user interface for interacting with the features of the challenge. It's designed using HTML, CSS, and JavaScript to ensure a user-friendly experience.
+
+- **Database**: The application uses a MySQL database to store and retrieve data related to the challenge. This includes information about game sessions and games.
+
+
+## Prerequisites
 
 Before begin, ensure you have met the following requirements:
 
