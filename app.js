@@ -31,7 +31,7 @@ const port = process.env.PORT || 3000;
 
 // Set up database connection parameters from environment variables or use defaults
 const db = mysql.createConnection({
-    host: process.env.DB_HOST || 'localhost',
+    host: process.env.DB_HOST,
     user: process.env.DB_USER || 'app',
     password: process.env.DB_PASSWORD || 'wonderful',
     database: process.env.DB_DATABASE || 'miechallenge'
