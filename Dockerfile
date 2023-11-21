@@ -19,9 +19,9 @@ EXPOSE 3000
 # Environment variables for the database configuration
 ENV DB_HOST=localhost
 ENV DB_PORT=3306
-ENV DB_USER=root
-ENV DB_PASSWORD=your-password
-ENV DB_DATABASE=your-database
+ENV DB_USER=app
+ENV DB_PASSWORD=wonderful
+ENV DB_DATABASE=miechallenge
 
 # Run the app when the container launches
 CMD ["npm", "start"]
