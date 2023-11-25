@@ -29,7 +29,7 @@ Before begin, ensure you have met the following requirements:
    ```bash
    git clone https://github.com/your-username/mie-dev-challenge.git
 
-   Replace your-username with your Github username
+Replace your-username with your Github username
 
 2. Change into the project directory
 
