@@ -41,7 +41,7 @@ Before begin, ensure you have met the following requirements:
    ```bash
    docker run --name=miedb -d -p 3307:3306 -e MARIADB_USER=app -e MARIADB_PASSWORD=wonderful -e MARIADB_DATABASE=miechallenge -e MARIADB_ROOT_PASSWORD=wonderful mariadb:latest
 
-Make sure that the docker is running
+  Make sure that the docker is running
 
    ```bash
    Docker ps
