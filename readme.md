@@ -41,12 +41,12 @@ Before begin, ensure you have met the following requirements:
    ```bash
    docker run --name=miedb -d -p 3307:3306 -e MARIADB_USER=app -e MARIADB_PASSWORD=wonderful -e MARIADB_DATABASE=miechallenge -e MARIADB_ROOT_PASSWORD=wonderful mariadb:latest
 
-  Make sure that the docker is running
+4. Make sure the docker is running
 
    ```bash
-   Docker ps
+   docker ps
 
-4. Start the App
+5. Start the App
 
    ```bash
    npm start
