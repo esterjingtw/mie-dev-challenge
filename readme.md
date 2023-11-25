@@ -36,22 +36,27 @@ Before begin, ensure you have met the following requirements:
    ```bash
    cd mie-dev-challenge
 
-3. Build Docker container
+3. Start MariaDB Container
 
    ```bash
-   docker build -t my-nodejs-app .
+   docker run --name=miedb -d -p 3307:3306 -e MARIADB_USER=app -e MARIADB_PASSWORD=wonderful -e MARIADB_DATABASE=miechallenge -e MARIADB_ROOT_PASSWORD=wonderful mariadb:latest
 
-4. Run the Docker container
+Make sure that the docker is running
 
    ```bash
-   docker run -p 3000:3000 my-nodejs-app
+   Docker ps
+
+4. Start the App
+
+   ```bash
+   npm start
 
 If it shows the message "Server running on port: 3000", it means that the application is running
 Now open your web browser to http://localhost:3000, you can now interact with the application as needed
 
 ## After Testing
 
-After testing the application, you can see your running docker file. Find the container ID, and then kill the docker file, replace <container ID> with the real ID shown in the "docker ps" command result
+After testing the application, you can see your running docker file. Find the container ID, and then kill the docker file, replace <container ID> (should be miedb) with the real ID shown in the "docker ps" command result
 
    ```bash
    docker ps
