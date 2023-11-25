@@ -56,7 +56,7 @@ Now open your web browser to http://localhost:3000, you can now interact with th
 
 ## After Testing
 
-After testing the application, you can see your running docker file. Find the container ID, and then kill the docker file, replace <container ID> (should be miedb) with the real ID shown in the "docker ps" command result
+After testing the application, you can see your running docker file. Find the container ID, and then kill the docker file, replace <container ID> with the real ID shown in the "docker ps" command result
 
    ```bash
    docker ps
